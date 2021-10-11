@@ -1,0 +1,70 @@
+.player {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1f3f4;
+    padding: 15px 0;
+    border-radius: 50px;
+  }
+
+  .control {
+      width: 25px;
+      height: 25px;
+      display: block;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+  }
+
+  .control.play {
+    background-image: url('../images/play_button.svg');
+  }
+
+  .control.pause {
+    background-image: url('../images/pause_button.svg');
+  }
+
+  .playpause {
+    cursor: pointer;
+    margin-left: 15px;
+  }
+
+  .playpause img {
+    height: 32px;
+    width: auto;
+  }
+
+  .playpause .pause {
+    display: none;
+  }
+
+  .scrubber .bar {
+    height: 4px;
+    width: 150px;
+    background: lightgray;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .scrubber .position-marker {
+    background: #002550;
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%) scale(1.5);
+  }
+
+  .elapsed span {
+    font-family: Roboto-Regular, Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: normal;
+    color: #002550;
+    margin-right: 25px;
+  }
+  
