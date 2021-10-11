@@ -1,0 +1,33 @@
+.audio-widget-container {}
+
+.audio-widget-container audio.audio-widget::-webkit-media-controls-panel {}
+
+.audio-widget-container audio.audio-widget::-webkit-media-controls-play-button {
+    background-image: url('../images/play_button.svg');
+}
+
+.audio-widget-container audio.audio-widget::-webkit-media-controls-current-time-display {
+    color: #002550;
+}
+
+.audio-widget-container audio.audio-widget::-webkit-media-controls-time-remaining-display {
+    color: #002550;
+}
+
+.audio-widget-container audio.audio-widget::-webkit-media-controls-mute-button {
+    background-image: url('../images/mute_button.svg');
+}
+
+.audio-widget-container audio.audio-widget::-webkit-media-controls-timeline#track {
+    color: #002550;
+    background-color: red;   
+}
+.audio-widget-container audio.audio-widget::-internal-media-controls-segmented-track {
+    color: #002550;
+    background-color: red;   
+}
+
+input[pseudo="-webkit-media-controls-timeline" i]::-internal-media-controls-segmented-track {
+    background-color: red;   
+}
+
