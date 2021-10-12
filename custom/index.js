@@ -16,6 +16,7 @@ jQuery(document).ready(function($) {
       while (s.length < size) s = "0" + s;
       return s;
     }
+    
     clearInterval(update_time);
     update_time = setInterval(function() {
       var gradients = '';
@@ -54,6 +55,7 @@ jQuery(document).ready(function($) {
   $play_button.on('click', function() {
     startNupdate();
   });
+
   $pause_button.on('click', function() {
     player.pause();
     $pause_button.hide();
